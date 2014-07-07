@@ -10,8 +10,8 @@ module WillYouStartTheFansPlease
       @loop_file = File.expand_path("../../../audio/loop.m4a", __FILE__)
       @ending_file = File.expand_path("../../../audio/ending.m4a", __FILE__)
 
-      puts 'playing audio...'
-      puts @loop_file
+      # puts 'playing audio...'
+      # puts @loop_file
       self.start_playback
     end
 
@@ -20,8 +20,8 @@ module WillYouStartTheFansPlease
     end
 
     def stop_playback
-      puts 'stopping audio...'
-      puts @ending_file
+      # puts 'stopping audio...'
+      # puts @ending_file
       parent_thread = @thread.pid
       child_threads = `pgrep -P #{@thread.pid}`.split("\n").to_a
       Process.kill "INT", parent_thread
