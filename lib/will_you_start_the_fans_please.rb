@@ -8,8 +8,8 @@ Capistrano::Configuration.instance(:must_exist).load do
 
   namespace :deploy do
 
-    before 'deploy:test_will_you_start_the_fans_please', 'will_you_start_the_fans_please:start_audio'
-    after 'deploy:test_will_you_start_the_fans_please',  'will_you_start_the_fans_please:stop_audio'
+    before 'deploy', 'will_you_start_the_fans_please:start_audio'
+    after 'deploy',  'will_you_start_the_fans_please:stop_audio'
 
   end
 
