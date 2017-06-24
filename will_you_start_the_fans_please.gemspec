@@ -4,15 +4,14 @@ $:.push File.expand_path('../lib', __FILE__)
 Gem::Specification.new do |s|
   s.name        = 'will_you_start_the_fans_please'
   s.version     = '1.0.0'
-  s.platform    = Gem::Platform::RUBY
+  s.summary     = 'An extension for Capistrano 2 to add a bit of 90s-era excitement to your deployment -- to the Crystal Dome!'
+  s.description = 'An extension for Capistrano 2 to add a bit of 90s-era excitement to your deployment -- to the Crystal Dome!'
+  s.platform    = Gem::Platform::CURRENT
   s.authors     = 'Ryan Conway'
   s.email       = ''
-  s.homepage    = 'http://github.com/rylon/will_you_start_the_fans_please'
-  s.summary     = ''
-  s.description = ''
-  s.license     = 'MIT'
+  s.homepage    = 'http://github.com/Rylon/will_you_start_the_fans_please'
 
-  s.rubyforge_project = 'will_you_start_the_fans_please'
+  s.license     = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
