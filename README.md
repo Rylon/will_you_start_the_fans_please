@@ -1,5 +1,7 @@
 # Will You Start The Fans Please
 
+[![Gem Version](https://badge.fury.io/rb/will_you_start_the_fans_please.svg)](http://badge.fury.io/rb/will_you_start_the_fans_please)
+
 An extension for Capistrano 2 to add a bit of 90s-era excitement to your deployment -- to the Crystal Dome!
 
 ## Requirements
